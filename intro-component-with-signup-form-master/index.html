@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container flexRow"> 
+    <div class="headingPara flexColumn">
+      <h1>Learn to code by watching others</h1>
+
+      <p class="para">  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+      </div>
+    
+      <div class="flex2 flexColumn">
+        <label for="">Try it free 7 days then $20/mo. thereafter</label>
+       <div class="new flexRow">
+        <div class="flex3 flexColumn">
+
+        <div id="youSuck" class="inputContainer flexColumn" style="width: 100%; " >
+        <input type="text" id="firstName" placeholder="First Name ">
+        <svg class="exclamationMark" id="exclamationMarkFN" style="display:none ;" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <div class="left"><p id="firstNameError" class="Error" style="display: none;">First Name can not be empty</p></div>
+        </div>
+        
+
+        <div class="inputContainer flexColumn" style="width: 100%; " >
+          <input type="text" id="lastName" placeholder="Last Name ">
+          <svg class="exclamationMark" id="exclamationMarkLN" style="display:none ;" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          <div class="left"><p id="lastNameError" class="Error" style="display: none;">Last Name can not be empty</p>
+          </div>
+        </div>
+        
+        <div class="inputContainer flexColumn" style="width: 100%; " >
+          <input type="text" id="emailAddress" placeholder="Email Address ">
+          <svg class="exclamationMark" id="exclamationMarkEA" style="display:none ;" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          <div class="left"><p id="emailAddressError" class="Error" style="display: none;">Looks Like this is not an email</p></div>
+        </div>
+       
+        <div class="inputContainer flexColumn" style="width: 100%; " >
+          <input type="text" id="passwords" placeholder="Password ">
+          <svg class="exclamationMark" id="exclamationMarkP" style="display:none ;" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <div class="left"><p id="passwordError" class="Error" style="display: none;">Password can not be empty</p></div>
+        </div>
+        
+
+        <button onclick="freeTrail()">Claim your free trial </button>
+
+        <p class="lol">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p></div>
+       
+        </div>
+      
+       
+      
+        
+      
+       
+
+      </div>
+
+
+    
+ </div>
+   
+ <footer>
+  <p class="attribution">
+    Challenge by <a style="color: black;" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a style="color: black;" href="#">Hamza Gohar</a>.
+  </p>
+</footer>
+ <script src="javaScript.js"></script>
+ 
+</body>
+</html>
